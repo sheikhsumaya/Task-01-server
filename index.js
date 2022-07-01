@@ -43,9 +43,9 @@ async function run(){
                 const id = req.params.id;
                 const query ={_id: ObjectId(id)};
                 const deleteItem = await taskCollection.deleteOne(query);
-                res.send(deleteItem);
+                res.json(deleteItem);
             })
-
+  
 
 
 
